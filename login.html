@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html"><h1>Calisto</h1></a>
+    </header>
+    <div class="form_content">
+        <div class="form_box" id="form_login">
+            <h2>Entrar</h2>
+            <form action="#">
+                <div class="input_box">
+                    <input type="email" name="email" required>
+                    <label>E-mail</label>
+                </div>
+                <div class="input_box">
+                    <input type="password" name="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Lembrar senha</label>
+                    <a href="#">Esqueci senha</a>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+                <div class="register">
+                    <p>Não possui conta?<a class="register_link" href="#"> Cadastre-se</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form_box" id="form_cadastro">
+            <h2>Cadastre-se</h2>
+            <form action="#">
+                <div class="input_box">
+                    <input type="text" name="name" required>
+                    <label>Nome</label>
+                </div>
+                <div class="input_box">
+                    <input type="email" name="email" required>
+                    <label>E-mail</label>
+                </div>
+                <div class="input_box">
+                    <input type="number" name="number" required>
+                    <label>Número</label>
+                </div>
+                <div class="input_box">
+                    <input type="password" name="password" required>
+                    <label>Senha</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox">Lembrar senha</label>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+                <div class="register">
+                    <p>Já possui conta?<a href="#" class="login_link"> Entrar</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

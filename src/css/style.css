@@ -1,0 +1,384 @@
+header{
+    display: flex;
+    height: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.nav-list a{
+    color: #0e0c0c;
+    position: relative;
+    padding: 3px;
+}
+
+.nav-list a:hover{
+    color: #3d3d3d;
+}
+
+.nav-list a::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #3d3d3d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-list a:hover::after{
+    width: 100%;
+}
+
+.menu{
+    display: none;
+}
+
+.menu div{
+    width: 32px;
+    height: 1.5px;
+    background: #0e0c0c;
+    margin: 8px;
+}
+
+.menu button{
+    background: white;
+    border: none;
+}
+
+.closebtn{
+    display: none;
+    color: #a8a29e;
+}
+
+header h1{
+    font-size: 40px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.nav-list{
+    display: flex;
+}
+
+.nav-list a{
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.background{
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/background/background-desktop.jpg);
+    background-position: bottom;
+    background-size: cover;
+}
+
+.sub-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.view-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+
+.view-more a:hover{
+    color: #292929;
+}
+
+.pants{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.model{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-height: 500px;
+}
+
+.img-model img{
+    height: 450px;
+    width: 300px;
+}
+
+.img-model img:hover{
+    border: 2px black solid;
+}
+
+.imgs{
+    padding: 2rem;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(233, 208, 243, 0.651);
+}
+
+.new-collection{
+    background-image: url(../img/background/pexels-cottonbro-studio-10570829.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 70%;
+}
+
+.collection{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection h2{
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.collection a{
+    position: relative;
+    background: rgb(207, 172, 221);
+    font-size: 25px;
+    color: #0e0c0c;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+.collection a:hover{
+    background: #a863d5;
+    letter-spacing: 0.15em;
+    box-shadow: 0 0 35px #a863d5;
+}
+
+.collection a:before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: rgb(233, 208, 243);
+}
+
+.collection a span{
+    position: relative;
+}
+
+.discounts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    height: 100%;
+}
+
+.offers{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    min-height: 18rem;
+    width: 100%;
+}
+
+.card{
+    height: 230px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #f2f2f2;
+    border-radius: 7px;
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    align-items: center;
+}
+
+.card:hover{
+    box-shadow: 7px 7px 7px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 7px;
+}
+
+.discounts h2{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.card-text{
+    width: 120px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    width: 100%;
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #a8a29e;
+    transition: all 0.3s;
+}
+
+footer ul li a:hover{
+    color: #87827f;
+    padding-left: 8px;
+}
+
+.opinion li{
+    color: #a8a29e;
+}
+
+.footer-content{
+    background-color: #171717;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* definindo quantas linhas eu quero */
+    padding: 3rem 3.5rem;
+}
+
+.sign-it input{
+    all: unset; /* tira toda a customização padrão */
+    border: 1px solid #0e0c0c;
+    border-radius: 3px;
+    padding: 0.75rem;
+    margin-top: 20px;
+    background-color: #292929;    
+    width: 100%;
+}
+
+@media screen and (max-width: 1100px){
+    .collection h2{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 999px){
+    .footer-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sign-it h3{
+        margin-top: 30px;
+    }
+
+    .collection h2 i{
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .nav-list{
+        display: none;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        background-color: #171717;
+        position: fixed;
+        left: 0;
+        top: 0;
+        overflow-x: hidden;
+        transition: all 0.5s;
+    }
+
+    .nav-list a{
+        color: #a8a29e;
+    }
+
+    .nav-content{
+        position: relative;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .nav-content a{
+        padding: 15px;
+        display: block;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .closebtn{
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 20px;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .imgs{
+        padding: 1rem;
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .footer-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .info{
+        margin-bottom: 25px;
+    }
+
+    .opinion{
+        margin-bottom: 25px;
+    }
+
+    .collection h2{
+        font-size: 30px;
+    }
+
+    .collection a{
+        font-size: 20px;
+        color: #0e0c0c;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 400;
+        padding: 10px 20px;
+        transition: 0.5s;
+    }
+}
+
+
