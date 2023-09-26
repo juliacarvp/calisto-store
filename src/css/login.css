@@ -40,6 +40,7 @@ header h1{
 
 .form_content.active{
     height: 550px;
+    margin-top: 70px;
 }
 
 .form_content.active #form_login{
